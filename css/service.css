@@ -1,0 +1,72 @@
+.service-hero{
+    height: 72vh;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(360deg,rgb(5, 3, 3),rgba(0, 0, 0, 0.5)),url("../icons/cover.jpg");
+    background-size: cover;
+    margin-bottom: 10%;
+}
+.service-hero-para{
+   position: relative;
+   top: 50%;
+   font-size: 4rem;
+   font-weight: bold;
+}
+
+.about-counter{
+    margin-top: 12%;
+    padding: 0 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+ }
+ .about-counter-div{
+    height: 24vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .about-counter-num{
+    font-size: 2rem;
+ }
+ .about-counter-para{
+    font-size: 1.2rem;
+    color:#7f7f7f;
+ }
+
+ .benefits-bottom-box2{
+    padding: 0% 5% 6%;
+ }
+
+@media screen and (max-width: 600px){
+.small{
+      font-size: 4.5vw;
+  }
+.large{
+      font-size: 11vw;
+  }
+.mid{
+      font-size: 5vw;
+  }
+.small-head{
+      font-size: 6vw;
+  }
+.btn{
+      font-size: 3.5vw;
+  }
+.service-hero{
+   height: 50vh ;
+}
+.benefits-bottom-div{
+   margin-top: 8%;
+}
+.benefits-bottom-box2{
+   padding:0 5% 10vh;
+}
+.feedback-section{
+   margin-bottom: 10vh;
+}
+
+}

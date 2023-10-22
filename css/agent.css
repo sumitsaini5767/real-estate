@@ -1,0 +1,165 @@
+.agent-hero{
+    height: 72vh;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(360deg,rgb(5, 3, 3),rgba(0, 0, 0, 0.5)),url("../icons/cover.jpg");
+    background-size: cover;
+}
+.agent-hero-para{
+   position: relative;
+   top: 50%;
+   font-size: 4.5vw;
+   font-weight: bold;
+}
+
+.our-commitment{
+    margin-top: 9%;
+    padding: 0 5%;
+    display: flex;
+}
+.our-commitment-left-sec{
+    width:49.5%;
+    
+}
+.our-commitment-image{
+    width: 100%;
+    height: 100%;
+}
+.our-commitment-right-sec{
+    padding: 0.2% 4% 2% 5%;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.commitment-right-sec-sub-head{
+    color: #d08e02;
+    font-weight: bold;
+}
+.commitment-right-sec-head{
+    font-size: 3.5vw;
+    font-weight:bold;
+    line-height: 1;
+}
+.commitment-right-sec-para{
+    font-size: 1.5vw;
+    color: #787878;
+    letter-spacing: 0.3px;
+    line-height: 1.3;
+}
+.commitment-right-sec-sign{
+    width: 50%;
+}
+.commitment-right-sec-sign-img{
+    width: 100%;
+    height: 13vh;
+}
+.commitment-right-sec-sign-name{
+    font-size: 2vw;
+}
+.commitment-right-sec-button{
+    background-color: #d08e02;
+    border: 1px solid #d08e02;
+    color: #ffffff;
+    padding:  4%;
+    font-size: 1.1vw;
+    letter-spacing: 2px;
+    width: 35%;
+    margin-top: 5%;
+}
+
+.expert-agent{
+    margin-top: 9%;
+    padding: 0 5%;
+    text-align: center;
+}
+.expert-agent-sub-head{
+    color: #d08e02;
+    font-weight: bold;
+}
+.expert-agent-head{
+    font-size: 4vw;
+    font-weight:500;
+    line-height: 1;
+    margin-top: 1.8%;
+    margin-bottom: 2%;
+}
+.expert-agent-para{
+    font-size: 1.5vw;
+    color: #787878;
+    letter-spacing: 0.3px;
+    line-height: 1.3;
+    padding: 0 20%;
+    margin-bottom: 3%;
+}
+.agent-best-partner{
+    background-image: linear-gradient(0deg,rgb(17, 16, 25),rgba(29, 27, 27, 0.7)),url("../icons/latest-news6.jpg");
+    background-size:cover;
+    height: 100vh;
+    margin-bottom: 8%;
+}
+
+
+@media screen and (max-width: 999px){
+    .small{
+          font-size: 4.5vw;
+      }
+    .large{
+          font-size: 11vw;
+      }
+    .mid{
+          font-size: 5vw;
+      }
+    .small-head{
+          font-size: 6vw;
+      }
+    .btn{
+          font-size: 3.5vw;
+      }
+    .agent-hero{
+       height: 50vh ;
+    }
+    .our-commitment{
+        flex-direction: column;
+        text-align: center;
+    }
+    .our-commitment-left-sec{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    .our-commitment-right-sec{
+        width: 100%;
+        padding:  0%;
+    }
+    .commitment-right-sec-sign{
+        width: 60%;
+    }
+    .commitment-right-sec-sign-img{
+        height: 9vh;
+    }
+    .commitment-right-sec-button{
+        width: 45%;
+        padding: 5%;
+    }
+    .expert-agent{
+        margin-top: 10vh;
+    }
+    .expert-agent-para{
+        padding: 0 ;
+    }
+    .agent-best-partner{
+        position: relative;
+        height: 60vh;
+        margin-bottom: 10vh;
+    }
+    .best-partner-content{
+        position: absolute;
+        width: 90%;
+        left: 5%;
+    }
+    .latest-news{
+        margin-bottom: 10vh;
+    }
+
+}

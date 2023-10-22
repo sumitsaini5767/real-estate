@@ -1,0 +1,25 @@
+<script src="https://unpkg.com/scrollreveal"></script>
+<div class="about-us">
+    <div class="about-us-left">
+        <p class="about-left-sub-head small">About Us</p>
+        <p class="about-left-heading large">The Exclusive and Premium Property</p>
+        <p class="about-left-para mid">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada neque sed pellentesque ullamcorper. Nullam commodo sem vitae nisl mollis vestibulum.</p>
+        <a href="/contact.html"><button class="about-contact-button btn">CONTACT US</button></a>
+    </div>
+    <div class="about-us-right">
+        <img class="about-split-container" src="../../icons/split-image.png">
+        <!-- <img class="about-right-image animated-effect" src="../icons/building.jpg" alt="Building">  -->
+    </div>
+</div>
+
+<script>
+    ScrollReveal({
+        reset:false,
+        distance:'100px',
+        duration:3500,
+        delay:400
+    });
+    
+    ScrollReveal().reveal('.about-us-right',{delay:800,origin:'right',distance:'400px'});
+    
+</script>

@@ -1,0 +1,131 @@
+<div class="header">
+    <div class="header-left">
+        <i class="fa fa-envelope header-icons" style="color:#d08e02"></i><a href="http://webreate.com">webreate.com</a>
+        <i class="fa fa-phone header-icons" style="color:#d08e02"></i><a href="#">(+62) 81 2345 1234</a>
+    </div>
+    <div class="header-right">
+        <a href="http://facebook.com"><i class="fa fa-facebook header-icons" ></i></a>
+        <a href="http://instagram.com"><i class="fa fa-instagram header-icons" ></i></a>
+        <a href="http://twitter.com"><i class="fa fa-twitter header-icons" ></i></a>
+        <a href="http://youtube.com"><i class="fa fa-youtube-play header-icons" ></i></a>
+    </div>
+</div>
+
+<div class="navbar" id="sticky-navbar">
+    <div class="navbar-div">
+        <div class="logo-div">
+            <img class="nav-logo" src="../icons/logo-hestate-3.png" alt="logo"/>
+        </div>
+        <div class="navbar-pages" id="navbar-pages">
+            <li class="nav-page active"><a class="nav-btn nav-link" href="/index.html" >HOME</a></li>
+            <li class="nav-page"><a class="nav-btn nav-link" href="/about.html">ABOUT US</a></li>
+            <li class="nav-page"><a class="nav-btn nav-link" href="/service.html">SERVICE</a></li>
+            <div class="nav-page dropdown" id="nav-drop"><a class="nav-btn nav-link2" href="#" >PAGE<i class="fa fa-caret-down"></i></a>
+                <li class="dropdown-content">
+                    <a class="nav-link1 " href="/news.html">NEWS</a>
+                    <a class="nav-link1" href="/single-post.html">SINGLE POST</a>
+                    <a class="nav-link1" href="/property-list.html">PROPERTY LIST</a>
+                    <a class="nav-link1" href="/property-detail.html">PROPERTY DETAIL</a>
+                    <a class="nav-link1" href="/agent.html">AGENT</a>
+                    <a class="nav-link1" href="/faq.html">FAQ</a>
+                    <a class="nav-link1" href="#">404 PAGE</a>
+                </li>
+            </div>
+            <li class="nav-page"><a class="nav-btn nav-link" href="/contact.html">CONTACT US</a></li>
+        </div>
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
+    </div>
+</div> 
+<div class="mobile-nav">
+    <div class="mobile-nav-div1">
+    <div class="mobile-nav-div"><a href="/index.html" style="color: #d08e02;">HOME</a></div>
+    <div class="mobile-nav-div"><a href="/about.html">ABOUT US</a></div>
+    <div class="mobile-nav-div"><a href="/service.html">SERVICE</a></div>
+    <div class="mobile-nav-div dropdown"><a href="#" >PAGE<i class="fa fa-caret-down"></i></a>
+        <div class="dropdown-content">
+            <a href="/news.html">NEWS</a>
+            <a href="/single-post.html">SINGLE POST</a>
+            <a href="/property-list.html">PROPERTY LIST</a>
+            <a href="/property-detail.html">PROPERTY DETAIL</a>
+            <a href="/agent.html">AGENT</a>
+            <a href="/faq.html">FAQ</a>
+            <a href="#">404 PAGE</a>
+        </div>
+    </div>
+    <div class="mobile-nav-div"><a href="/contact.html">CONTACT US</a></div>
+</div>
+</div>
+
+
+<script>
+    var last=0;
+    navbar=document.getElementById("sticky-navbar");
+    window.addEventListener("scroll",function(){
+    var scrollTop=window.pageYOffset || document.
+    documentElement.scrollTop;
+    if(scrollTop>last){
+        // navbar.style.position="relative";
+        navbar.style.top="-100px";
+    }
+    else if(scrollTop<last){
+        navbar.style.top="0%";
+        navbar.style.position="fixed";
+        navbar.style.backgroundColor="rgba(0,0,0,0.9)";
+        navbar.style.zIndex="2";
+        navbar.style.transition= "0.8s ease";
+    }
+    last=scrollTop;
+    if(scrollTop==0){
+        navbar.style.position="absolute";
+        navbar.style.top="11%";
+        navbar.style.backgroundColor="transparent";
+        navbar.style.transition= "0.8s ease";
+    }
+});
+</script>
+<script>
+    window.onload=function(){
+        const menu_btn=document.querySelector(".hamburger");
+        const mobile_menu=document.querySelector(".mobile-nav");
+        const navbar=document.getElementById("sticky-navbar");
+        menu_btn.addEventListener("click",function(){
+            menu_btn.classList.toggle("is-active");
+            mobile_menu.classList.toggle("is-active");
+            navbar.style.backgroundColor="white";
+            navbar.style.zIndex="5";
+        })
+    
+    }
+</script>
+<!-- <script>
+    var btnContainer=document.querySelector("#navbar-pages");
+    var btns=btnContainer.querySelector(".nav-btn");
+    for (var i=0; i<btns.length; i++){
+        btns[i].addEventListener('click',function(){
+            var current=document.querySelector(".nav-active");
+            current[0].className=current[0].className.replace("nav-active");
+            this.className+="nav-active";
+        })
+    }
+</script> -->
+<script>
+    document.querySelectorAll(".nav-link").forEach((link) => {
+    if (link.href === window.location.href) {
+        link.classList.add("active");
+        link.setAttribute("aria-current", "page");
+    }
+    
+})
+let drop=document.getElementsByClassName("nav-link2");
+document.querySelectorAll(".nav-link1").forEach((link) => {
+    if (link.href === window.location.href) {
+        link.classList.add("active");
+        drop.classList.add("active");
+        link.setAttribute("aria-current", "page");
+        drop.setAttribute("aria-current", "page");
+    }
+    
+});
+</script>

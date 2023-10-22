@@ -1,0 +1,43 @@
+<script src="https://unpkg.com/scrollreveal"></script>
+<div class="featured-properties-top">
+    <div class="featured-properties-top-left">
+        <img class="featured-properties-top-left-image" src="../icons/featured-properties.jpg" alt="features"/>
+    </div>
+    <div class="featured-properties-top-right">
+        <p class="featured-top-right-head small-head">Pondok Asri Villa, Nusa Dua</p>
+        <p class="featured-top-right-para mid">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada neque sed pellentesque ullamcorper.</p>
+        <div class="featured-top-nav">
+        <div class="featured-top-nav-div"><i class="fa fa-envelope" style="color:#d08e02"></i><a href="http://webreate.com" >webreate.com</a></div>
+        <div class="featured-top-nav-div"><i class="fa fa-phone" style="color:#d08e02"></i><a href="#">(+62) 81 2345 1234</a></div>
+        </div>
+        <p class="featured-top-right-sub-head mid">Unit Detail</p>
+        <div class="featured-properties-top-right-icons">
+            <div class="featured-properties-top-right-icon">
+                <i class="fa fa-map" style="color:#d08e02"></i><span>250 M2</span>
+            </div>
+            <div class="featured-properties-top-right-icon">
+                <i class="fa fa-bath" style="color:#d08e02"></i><span>2 Bathroom</span>
+            </div>
+            <div class="featured-properties-top-right-icon">
+                <i class="fa fa-bed" style="color:#d08e02"></i><span>4 Room</span>
+            </div>
+            <div class="featured-properties-top-right-icon">
+                <i class="fa fa-car" style="color:#d08e02"></i><span>1 Garage</span>
+            </div>
+        </div>
+        <a href="#"><button class="featured-button btn">GET IT NOW</button></a>
+    </div>
+</div>
+
+<script>
+    ScrollReveal({
+        reset:false,
+        distance:'100px',
+        duration:2500,
+        delay:400
+    });
+    
+    ScrollReveal().reveal('.featured-properties-top-left',{delay:300,origin:'right',distance:'300px'});
+    ScrollReveal().reveal('.featured-properties-top-right',{delay:600,origin:'right',distance:'300px'});
+    
+</script>
